@@ -1,0 +1,13 @@
+{
+	"name": "wiim",
+	"version": "0.0.1",
+	"title": "Where Is It Made?",
+	"description": "Where Is It Made is a utility mod that allows you to search for where certain recipes are being made.",
+	"author": "AlienX",
+	"contact": "http://www.agngaming.com/discord",
+	"factorio_version": "0.17",
+	"dependencies":
+	[
+		"base >= 0.17.51"
+	]
+}
