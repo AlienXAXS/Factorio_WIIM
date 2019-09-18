@@ -1,28 +1,8 @@
 local Queue = {}
 
---[[
-Queue Request Makeup:
-{
-    queuecriteria -> table,
-    queuedItems -> table,
-    player,
-    queueFinished -> (player, queueResults)
-    (optional)queueProgressed -> (player, progress)
-}
-
-queuecriteria {
-    Against -> maybe something like "recipe", "item", "building"
-    criteria -> recipe / item / building trying to find
-}
-
-queuedItems {
-    table of entities to search against
-}
-]]--
-
 -- Configuration, can be overwritten
 -- todo: move this to map settings
-Queue.MaxSearchesPerTick = 1
+Queue.MaxSearchesPerTick = settings.global["wiim-max-searches-per-tick"].value or 5
 
 function processFinishedCallback(queue)
 	if ( queue.player.valid ) then

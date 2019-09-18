@@ -13,5 +13,11 @@ data:extend({
 		scale = 1,
 		flags = {"icon"}
 	},
+ },
+ {
+	type = "sprite",
+	name = "wiim_arrow",
+	filename = "__wiim__/graphics/icons/arrow.png",
+	size=32
  }
 })
